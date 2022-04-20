@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Set the Background Image-->
+    <item
+        android:width="70dp"
+        android:height="70dp"
+        android:gravity="center">
+        <bitmap
+            android:gravity="fill_horizontal|fill_vertical"
+            android:src="@drawable/fit_icon" />
+    </item>
+</layer-list>

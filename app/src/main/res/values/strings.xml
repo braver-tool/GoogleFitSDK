@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BraverGoogleFit</string>
+    <string name="app_name_a">Braver GoogleFit</string>
+    <string name="g_vitals">Vitals</string>
+    <string name="g_activity">Activity</string>
+    <string name="g_sleep">Sleep</string>
+    <string name="chooser_title">Select the module which needs to be synced</string>
+    <string name="g_select_start_date">Start Date  :</string>
+    <string name="g_select_end_date">End Date  :</string>
+    <string name="sample_date">Jun 03, 2022</string>
+    <string name="no_record">No Data Found!</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="synced_data">Synchronized Data...</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_no">No</string>
+    <string name="user_name">Tony Stark</string>
+
+    <!--Alerts-->
+    <string name="alert_start_date">Please enter start date</string>
+    <string name="alert_google_auth">Please Sign-in with google account, Click profile icon and get permission</string>
+    <string name="alert_module">Please select module</string>
+    <string name="alert_end_date">Please enter end date</string>
+    <string name="msg_pair_success">Paired Successfully!</string>
+    <string name="alert_denied_permission">Permission denied!</string>
+    <string name="logout">Logout</string>
+    <string name="alert_logout">Are you sure you want to logout?</string>
+    <string name="alert_auth_success">Google Authentication successfully!</string>
+    <string name="alert_auth_failed">Google SignIn Failed!</string>
+</resources>

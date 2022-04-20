@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/gFitTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/blue"
+        android:paddingTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:includeFontPadding="false"
+            android:text="@string/app_name_a"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp" />
+
+        <LinearLayout
+            android:id="@+id/gUserLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gFitLoginImageView"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="end"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_account_circle_outlined" />
+
+            <TextView
+                android:id="@+id/gUserNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:includeFontPadding="false"
+                android:text="@string/user_name"
+                android:textColor="@color/grey_three"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/gUserLayout"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#000"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chooserTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:includeFontPadding="false"
+        android:text="@string/chooser_title"
+        android:textColor="@color/grey_three"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gFitTitleLayout" />
+
+    <RadioGroup
+        android:id="@+id/gFitRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooserTitleTextView">
+
+        <RadioButton
+            android:id="@+id/gFitVitalsRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/radio_button_blue"
+            android:checked="false"
+            android:fontFamily="@font/akaya_telivigala"
+            android:includeFontPadding="false"
+            android:text="@string/g_vitals"
+            android:textColor="@color/grey_six"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="UnusedAttribute" />
+
+        <RadioButton
+            android:id="@+id/gFitActivityRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:buttonTint="@color/radio_button_blue"
+            android:checked="false"
+            android:fontFamily="@font/akaya_telivigala"
+            android:includeFontPadding="false"
+            android:text="@string/g_activity"
+            android:textColor="@color/grey_six"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="UnusedAttribute" />
+
+        <RadioButton
+            android:id="@+id/gFitSleepRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:buttonTint="@color/radio_button_blue"
+            android:checked="false"
+            android:fontFamily="@font/akaya_telivigala"
+            android:includeFontPadding="false"
+            android:text="@string/g_sleep"
+            android:textColor="@color/grey_six"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="UnusedAttribute" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/gFitStartDateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gFitRadioGroup">
+
+        <TextView
+            android:id="@+id/gFitStartDateTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:includeFontPadding="false"
+            android:text="@string/g_select_start_date"
+            android:textColor="@color/grey_three"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/gFitStartDateAnsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/btm_line_date"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="@string/sample_date"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/_3sdp"
+            android:textColor="@color/grey_six"
+            android:textColorHint="@color/white_light"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gFitEndDateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gFitStartDateLayout">
+
+        <TextView
+            android:id="@+id/gFitEndDateTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:includeFontPadding="false"
+            android:text="@string/g_select_end_date"
+            android:textColor="@color/grey_three"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/gFitEndDateAnsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/btm_line_date"
+            android:fontFamily="@font/akaya_telivigala"
+            android:hint="@string/sample_date"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/_3sdp"
+            android:textColor="@color/grey_six"
+            android:textColorHint="@color/white_light"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/syncDataTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/akaya_telivigala"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/sync_data"
+        android:textColor="@color/grey_three"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gFitEndDateLayout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/noRecordsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:includeFontPadding="false"
+            android:text="@string/no_record"
+            android:textColor="@color/grey_three"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressCircular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gFitRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </RelativeLayout>
+
+</LinearLayout>

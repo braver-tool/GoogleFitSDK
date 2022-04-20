@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/android_twelve_splash_back_ground</item>
+        <!-- Switch to original app theme after splash screen -->
+        <item name="postSplashScreenTheme">@style/Theme.GoogleFitSDK</item>
+    </style>
+</resources>

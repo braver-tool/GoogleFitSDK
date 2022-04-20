@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "774203863197",
+    "project_id": "fitsdk-a2b3f",
+    "storage_bucket": "fitsdk-a2b3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774203863197:android:1dd4e4f9d4ad6d5878a474",
+        "android_client_info": {
+          "package_name": "com.braver.googlefit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774203863197-7p6n5q9dr9d3leg0jaequm961i47uqcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE_bYjUkr1_xWIkaDl6X0uiy21tSbuvzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774203863197-7p6n5q9dr9d3leg0jaequm961i47uqcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
