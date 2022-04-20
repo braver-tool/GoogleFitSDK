@@ -3,11 +3,7 @@
 This example project shows how to get data from GoogleFit App/Account, User can able to select the start and end date and the module like Vitals, Activity, Sleep. After getting the details from the user we can get the data using Google's Fitness API, then parse the data using Data Types, Finally, we showed the above values on UI.
 
 ## Demo
-![Demo](/screenshots/home.jpg)
-![Demo](/screenshots/vitals.jpg)
-![Demo](/screenshots/activity.jpg)
-![Demo](/screenshots/sleep.jpg)
-
+![Demo](/screenshots/demo_file.jpg)
 
 # Usage:
 
